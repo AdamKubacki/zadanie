@@ -9,6 +9,12 @@ unsigned long long silnia(int n) {
 int main() {
     int number;
     cin >> number;
+
+    if (number < 0) {
+        cout << "Liczba ujemna" << endl;
+        return 1;
+    }
+
     cout << silnia(number) << endl;
     return 0;
 }
